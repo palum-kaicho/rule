@@ -5,109 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>かいちょ枠のルール</title>
     <style>
+        /* スマホ向けの基本設定 */
         body {
-            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-            line-height: 1.6;
+            font-family: sans-serif;
+            line-height: 1.5;
             color: #333;
             background-color: #f9f9f9;
-            padding: 20px;
             margin: 0;
+            padding: 20px 15px; /* 画面端に余裕を持たせる */
         }
+
         .container {
-            max-width: 600px;
+            max-width: 100%;
             margin: 0 auto;
             background: #fff;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        h1 {
+
+        /* ヘッダー部分 */
+        .header {
             text-align: center;
-            font-size: 1.5em;
-            color: #d35400;
-            border-bottom: 2px solid #f39c12;
-            padding-bottom: 10px;
+            padding: 20px 10px;
         }
-        .intro {
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 20px;
+        .header h1 {
+            font-size: 1.4rem;
+            color: #d38f11; /* 元のオレンジ系 */
+            margin: 5px 0;
         }
-        .rule-item {
-            margin-bottom: 25px;
+        .intro-text {
+            font-size: 0.95rem;
+            padding: 0 10px;
+        }
+
+        /* 各セクションの枠線と余白 */
+        .section {
+            border-left: 6px solid #f39c12;
+            background-color: #fffaf0;
+            margin: 15px;
             padding: 15px;
-            border-left: 5px solid #f39c12;
-            background: #fffaf0;
         }
-        .rule-title {
-            font-weight: bold;
-            font-size: 1.1em;
-            display: flex;
-            align-items: center;
+
+        .section h2 {
+            font-size: 1.1rem;
+            margin-top: 0;
             margin-bottom: 10px;
         }
-        .rule-content {
-            font-size: 0.95em;
+
+        .section p {
+            font-size: 0.9rem;
+            margin: 8px 0;
+            word-wrap: break-word; /* 長い単語の改行対策 */
         }
+
+        /* 強調色（原文のオレンジ箇所） */
+        .highlight {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
         .footer {
             text-align: center;
-            margin-top: 30px;
-            font-size: 0.8em;
-            color: #888;
-        }
-        strong {
-            color: #e67e22;
+            font-size: 0.8rem;
+            color: #777;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>👑 かいちょ枠のルール 👑</h1>
-    
-    <div class="intro">
-        いつも遊びに来てくれてありがとう！<br>
-        みんながもっと楽しく、最高に盛り上がれる枠にするためのルールだよ^_^
+    <div class="header">
+        <div>👑</div>
+        <h1>かいちょ枠のルール</h1>
+        <div>👑</div>
+        <p class="intro-text">
+            いつも遊びに来てくれてありがとう！<br>
+            みんながもっと楽しく、最高に盛り上がれる枠にするためのルールだよ^_^
+        </p>
     </div>
 
-    <div class="rule-item">
-        <div class="rule-title">1. 枠回りについて 🔄</div>
-        <div class="rule-content">
-            かいちょ枠の常連ライバーさんのところへ遊びに行くときは、<br>
-            <strong>条件①でもいいから絶対バッジとってね^_^</strong><br>
-            バッジ取れないなら枠回りしないよ～
-        </div>
+    <div class="section">
+        <h2>1. 枠回りについて 🔄</h2>
+        <p>かいちょ枠の常連ライバーさんのところへ遊びに行くときは、<span class="highlight">条件①でもいいから絶対バッジとってね^_^</span></p>
+        <p>バッジ取れないなら枠回りしないよ～</p>
     </div>
 
-    <div class="rule-item">
-        <div class="rule-title">2. ゲリラ配信について ⚡</div>
-        <div class="rule-content">
-            （平日22時〜25時以外）<br>
-            通常配信以外は、新しい仲間を増やすための<strong>【初見さん優先モード】</strong>ね。<br><br>
-            身内ネタで盛り上がってても、初見さんが来たら一気に「おもてなしモード」に切り替えるからね^_^<br><br>
-            「初見さんに絡むの苦手やな…」って人も、少しだけ勇気を出して挨拶してみてね^_^<br>
-            万が一事故っても、全部僕がフォローするからね。そこに関しては<strong>プロだから安心してね^_^</strong>
-        </div>
+    <div class="section">
+        <h2>2. ゲリラ配信について ⚡</h2>
+        <p>（平日22時〜25時以外）</p>
+        <p>通常配信以外は、新しい仲間を増やすための<span class="highlight">【初見さん優先モード】</span>ね。</p>
+        <p>身内ネタで盛り上がってても、初見さんが来たら一気に「おもてなしモード」に切り替えるからね^_^</p>
+        <p>「初見さんに絡むの苦手やな…」って人も、少しだけ勇気を出して挨拶してみてね^_^</p>
+        <p>万が一事故っても、全部僕がフォローするからね。そこに関しては<span class="highlight">プロだから安心してね^_^</span></p>
     </div>
 
-    <div class="rule-item">
-        <div class="rule-title">3. 初見さんへの「追いギフ」のお願い 🎁</div>
-        <div class="rule-content">
-            初見さんが100コイン以上投げてくれた時は、キラコメもいいけど、できれば<strong>【追いギフ】</strong>で盛り上げてほしい！<br>
-            「ここで投げてよかった！」「ここ楽しい！」って思ってもらえる空気作り、みんなで協力してくれたらかいちょまじで助かるよ！
-        </div>
+    <div class="section">
+        <h2>3. 初見さんへの「追いギフ」のお願い 🎁</h2>
+        <p>初見さんが100コイン以上投げてくれた時は、キラコメもいいけど、できれば<span class="highlight">【追いギフ】</span>で盛り上げてほしい！</p>
+        <p>「ここで投げてよかった！」「ここ楽しい！」って思ってもらえる空気作り、みんなで協力してくれたらかいちょまじで助かるよ！</p>
     </div>
 
-    <div class="rule-item">
-        <div class="rule-title">4. 通常配信は変わらぬ愛を！ ❤️</div>
-        <div class="rule-content">
-            22時からの通常配信は、今までどおり<strong>【かいちょリスナー最優先】</strong>！<br>
-            古参も常連も、みんなが一番笑える時間にすることを約束するから安心してね^_^
-        </div>
+    <div class="section">
+        <h2>4. 通常配信は変わらぬ愛を！ ❤️</h2>
+        <p>22時からの通常配信は、今までどおり<span class="highlight">【かいちょリスナー最優先】</span>！</p>
+        <p>古参も常連も、みんなが一番笑える時間にすることを約束するから安心してね^_^</p>
     </div>
 
     <div class="footer">
-        &copy; 2026 かいちょ Channel - Sランクへの挑戦中！
+        © 2026 かいちょ Channel - Sランクへの挑戦中！
     </div>
 </div>
 
